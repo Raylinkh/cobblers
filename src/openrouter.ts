@@ -21,9 +21,9 @@ export interface ChatCompletionResponse {
 }
 
 export const DEFAULT_MODELS = [
-  "google/gemini-2.0-flash-001",
-  "stepfun/step-2-16k-nothink", 
-  "meta-llama/llama-3.3-70b-instruct"
+  "stepfun/step-3.5-flash:free",      // StepFun 3.5 Flash (FREE)
+  "minimax/minimax-m2.5",              // MiniMax M2.5
+  "google/gemini-3-flash-preview"      // Gemini 3 Flash
 ];
 
 export interface ModelInfo {
