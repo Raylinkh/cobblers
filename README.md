@@ -62,9 +62,11 @@ export OPENROUTER_API_KEY="sk-or-v1-..."
 ### Default Models
 
 By default, Cobblers uses these free/cheap models:
-- `google/gemini-2.0-flash-001`
-- `stepfun/step-2-16k-nothink`
-- `meta-llama/llama-3.3-70b-instruct`
+- `stepfun/step-3.5-flash:free` — **FREE**
+- `minimax/minimax-m2.5`
+- `google/gemini-3-flash-preview`
+
+Use `cobblers models` to see all available models with pricing.
 
 Override with `--models`:
 ```bash
@@ -84,7 +86,7 @@ cobblers ask "What's the best approach to handle authentication in a serverless 
 cobblers ask "Should we rewrite in Rust?" \
   --agents 4 \
   --rounds 3 \
-  --models "google/gemini-2.0-flash-001,anthropic/claude-3-haiku"
+  --models "stepfun/step-3.5-flash:free,minimax/minimax-m2.5,google/gemini-3-flash-preview"
 ```
 
 Options:
